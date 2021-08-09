@@ -1,0 +1,68 @@
+version: v1.0
+name: 'Semaphore v2 tests'
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+
+blocks:
+  - name: 'shared cache'
+    dependencies: []
+    task:
+      jobs:
+        - name: Create cache (only runs on master)
+          commands:
+            - checkout
+            - nvm use
+            - cache restore
+            - retry --times 3 --sleep 5 npm install -g yarn
+            - node -v
+            - yarn -v
+            - retry --times 3 --sleep 5 yarn install --frozen-lockfile
+            - retry --times 3 --sleep 5 cache store
+  - name: 'JS/TS tests'
+    dependencies: ['shared cache']
+    task:
+      prologue:
+        commands:
+          - checkout
+          - nvm use
+          - cache restore
+          - retry --times 3 --sleep 5 npm install -g yarn
+          - node -v
+          - yarn -v
+          - retry --times 3 --sleep 5 yarn install --frozen-lockfile
+      jobs:
+        - name: Backstage version dependencies check
+          commands:
+            - yarn backstage-cli versions:check
+        - name: Unit tests
+          commands:
+            - yarn test:all
+        - name: Lint
+          commands:
+            - yarn lint:all
+        - name: Prettier
+          commands:
+            - yarn prettier:check
+        - name: Build
+          commands:
+            - yarn tsc
+            - yarn build
+        - name: Ensure yarn.lock has been updated
+          commands:
+            - retry --times 3 --sleep 5 yarn install
+            - git diff --exit-code yarn.lock
+  - name: 'Docker linting'
+    dependencies: []
+    task:
+      secrets:
+        - name: semaphore-docker-registry
+      jobs:
+        - name: Hadolint
+          commands:
+            - checkout
+            - docker login -u $REGISTRY_BETA_USER -p $REGISTRY_BETA_PASSWORD $REGISTRY_BETA_HOST
+            - docker run --rm -i $REGISTRY_BETA_HOST/hadolint:latest < packages/backend/Dockerfile
+    run:
+      when: "change_in('/packages/backend/Dockerfile')"
