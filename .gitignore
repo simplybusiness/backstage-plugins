@@ -31,3 +31,6 @@ site
 
 # Sensitive credentials
 *-credentials.yaml
+
+# Misc
+.DS_STORE
