@@ -69,5 +69,12 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/apis.ts",
+      "src/components/search/SearchPage.tsx",
+      "src/components/Root/LogoFull.tsx"
+    ]
+  }
 }
