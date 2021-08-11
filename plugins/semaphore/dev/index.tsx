@@ -1,6 +1,6 @@
 import React from 'react';
 import { createDevApp } from '@backstage/dev-utils';
-import { semaphorePlugin, SemaphorePage } from '../src/plugin';
+import { semaphorePlugin, SemaphorePage } from "../src";
 
 createDevApp()
   .registerPlugin(semaphorePlugin)
