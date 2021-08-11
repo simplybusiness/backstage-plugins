@@ -47,5 +47,17 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.ts",
+      "src/plugins/app.ts",
+      "src/plugins/auth.ts",
+      "src/plugins/catalog.ts",
+      "src/plugins/proxy.ts",
+      "src/plugins/scaffolder.ts",
+      "src/plugins/search.ts",
+      "src/plugins/techdocs.ts"
+    ]
+  }
 }
