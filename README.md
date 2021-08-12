@@ -7,7 +7,8 @@ Simply Business's open source Backstage plugins
 ### Prerequisites
 
 1. Install dependencies: `yarn install`
-1. Build Backstage: `yarn build`
+2. Compile typescript: `yarn tsc`
+3. Build Backstage: `yarn build`
 
 ### Running Frontend and Backend together
 
@@ -28,6 +29,13 @@ Start just the Frontend:
 ```shell
 yarn start-frontend
 ```
+
+### Running Frontend and Backend together on Docker
+
+Build the image: `yarn build-image`
+Start the image: `yarn start-image`
+
+Access Backstage from here: http://localhost:7000/
 
 ## Updating Backstage Dependencies
 

@@ -10,6 +10,7 @@
   "scripts": {
     "build": "backstage-cli backend:bundle",
     "build-image": "docker build ../.. -f Dockerfile --tag backstage",
+    "start-image": "docker run --rm -P -p 7000:7000 -it backstage",
     "start": "backstage-cli backend:dev",
     "lint": "backstage-cli lint",
     "test": "backstage-cli test",

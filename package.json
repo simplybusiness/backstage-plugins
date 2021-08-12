@@ -11,6 +11,7 @@
     "start-backend": "yarn workspace backend start",
     "build": "lerna run build",
     "build-image": "yarn workspace backend build-image",
+    "start-image": "yarn workspace backend start-image",
     "tsc": "tsc",
     "tsc:full": "tsc --skipLibCheck false --incremental false",
     "clean": "backstage-cli clean && lerna run clean",
