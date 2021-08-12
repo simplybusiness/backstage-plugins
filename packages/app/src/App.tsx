@@ -61,7 +61,7 @@ const routes = (
     <Route path="/catalog-import" element={<CatalogImportPage />} />
     <Route path="/search" element={<SearchPage />} />
     <Route path="/settings" element={<UserSettingsPage />} />
-    <Route path="/semaphore" element={<SemaphorePage />}/>
+    <Route path="/semaphore" element={<SemaphorePage />} />
   </FlatRoutes>
 );
 
