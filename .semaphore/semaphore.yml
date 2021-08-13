@@ -33,9 +33,6 @@ blocks:
           - yarn -v
           - retry --times 3 --sleep 5 yarn install --frozen-lockfile
       jobs:
-        - name: Backstage version dependencies check
-          commands:
-            - yarn backstage-cli versions:check
         - name: Unit tests
           commands:
             - yarn test:all
@@ -53,6 +50,9 @@ blocks:
           commands:
             - retry --times 3 --sleep 5 yarn install
             - git diff --exit-code yarn.lock
+        - name: Backstage version dependencies check
+          commands:
+            - yarn backstage-cli versions:check
   - name: 'Docker linting'
     dependencies: []
     task:
