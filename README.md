@@ -32,8 +32,8 @@ yarn start-frontend
 
 ### Running Frontend and Backend together on Docker
 
-Build the image: `yarn build-image`
-Start the image: `yarn start-image`
+1. Build the image: `yarn build-image`
+2. Start the image: `yarn start-image`
 
 Access Backstage from here: http://localhost:7000/
 
