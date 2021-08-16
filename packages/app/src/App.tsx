@@ -22,6 +22,7 @@ import { Root } from './components/Root';
 import { AlertDisplay, OAuthRequestDialog } from '@backstage/core-components';
 import { createApp, FlatRoutes } from '@backstage/core-app-api';
 import { SemaphorePage } from '@internal/plugin-semaphore';
+import { DemoPage } from '@internal/plugin-demo';
 
 const app = createApp({
   apis,
@@ -62,6 +63,7 @@ const routes = (
     <Route path="/search" element={<SearchPage />} />
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/semaphore" element={<SemaphorePage />} />
+    <Route path="/demo" element={<DemoPage />}/>
   </FlatRoutes>
 );
 

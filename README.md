@@ -77,3 +77,8 @@ Here are the steps to update:
 1. Run `yarn install`.
 1. Run `yarn tsc`.
 1. Start it up locally and ensure everything works.
+
+## Creating a new plugin
+
+1. Run `yarn create-plugin` and follow the instructions.
+2. Use the [demo plugin](plugins/demo) to get your new plugin's test coverage to 100% quickly, so you can start working on it.
