@@ -63,7 +63,7 @@ const routes = (
     <Route path="/search" element={<SearchPage />} />
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/semaphore" element={<SemaphorePage />} />
-    <Route path="/demo" element={<DemoPage />}/>
+    <Route path="/demo" element={<DemoPage />} />
   </FlatRoutes>
 );
 
