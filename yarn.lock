@@ -1191,15 +1191,15 @@
     to-fast-properties "^2.0.0"
 
 "@backstage/backend-common@^0.8.3", "@backstage/backend-common@^0.8.6", "@backstage/backend-common@^0.8.7", "@backstage/backend-common@^0.8.8":
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.8.tgz#d21734d1bd78ee586e1cd78291ac66517e30286a"
-  integrity sha512-Kv7o8oQq2rU/XAjlDUC6YR/sw3dp4mF3TmuQcW7jqgxxpf48AryDWhsKYwlUx76PQrdg5tAzFep9y85iNrtB0g==
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.9.tgz#a9466eeec426c14efcf8266bb6191bf16b6dc9fb"
+  integrity sha512-IQ/71mJeRsI1L5eMJil7NYQ/HKsPZ6POMa8HczEWzk7hZQagSxG9SHzs1bQ5DA1bfEGlBeM8dx3ZkhAhoGeO1g==
   dependencies:
     "@backstage/cli-common" "^0.1.2"
     "@backstage/config" "^0.1.6"
     "@backstage/config-loader" "^0.6.6"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.9"
+    "@backstage/integration" "^0.6.0"
     "@google-cloud/storage" "^5.8.0"
     "@octokit/rest" "^18.5.3"
     "@types/cors" "^2.8.6"
@@ -1522,6 +1522,18 @@
     cross-fetch "^3.0.6"
     git-url-parse "~11.4.4"
     luxon "^1.25.0"
+
+"@backstage/integration@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-0.6.0.tgz#e99b34b00463da7d8f888e62036cf9dd89118151"
+  integrity sha512-+4GFmXoyrwqQYBU2HGjFOmD9pKb9/AItycVzPnxlE4rL0rcqJXaSThgE7+hlmyjA1tIfHlrPG/xFmT/opkQ5Wg==
+  dependencies:
+    "@backstage/config" "^0.1.6"
+    "@octokit/auth-app" "^3.4.0"
+    "@octokit/rest" "^18.5.3"
+    cross-fetch "^3.0.6"
+    git-url-parse "~11.4.4"
+    luxon "^2.0.2"
 
 "@backstage/plugin-api-docs@^0.6.4":
   version "0.6.5"
@@ -12829,6 +12841,11 @@ luxon@^1.25.0, luxon@^1.26.0, luxon@^1.27.0:
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.0.tgz#e7f96daad3938c06a62de0fb027115d251251fbf"
   integrity sha512-TfTiyvZhwBYM/7QdAVDh+7dBTBA29v4ik0Ce9zda3Mnf8on1S5KJI8P2jKFZ8+5C0jhmr0KwJEO/Wdpm0VeWJQ==
 
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
+
 lz-string@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
@@ -18217,19 +18234,7 @@ tar@^4, tar@^4.4.12:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
-tar@^6.0.2, tar@^6.1.0:
-  version "6.1.6"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.6.tgz#c23d797b0a1efe5d479b1490805c5443f3560c5d"
-  integrity sha512-oaWyu5dQbHaYcyZCTfyPpC+VmI62/OM2RTUYavTk1MDr1cwW5Boi3baeYQKiZbY2uSQJGr+iMOzb/JFxLrft+g==
-  dependencies:
-    chownr "^2.0.0"
-    fs-minipass "^2.0.0"
-    minipass "^3.0.0"
-    minizlib "^2.1.1"
-    mkdirp "^1.0.3"
-    yallist "^4.0.0"
-
-tar@^6.1.2:
+tar@^6.0.2, tar@^6.1.0, tar@^6.1.2:
   version "6.1.7"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.7.tgz#c566d1107d38b09e92983a68db5534fc7f6cab42"
   integrity sha512-PBoRkOJU0X3lejJ8GaRCsobjXTgFofRDSPdSUhRSdlwJfifRlQBwGXitDItdGFu0/h0XDMCkig0RN1iT7DBxhA==
