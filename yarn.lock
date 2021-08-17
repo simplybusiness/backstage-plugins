@@ -1399,13 +1399,13 @@
     react-use "^17.2.4"
     zen-observable "^0.8.15"
 
-"@backstage/core-components@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@backstage/core-components/-/core-components-0.3.0.tgz#d19d7953aa00c2f41c7462591e12deb5e821cd81"
-  integrity sha512-WLQGtEo7wGviPeo6xCQyF7F7FFl/G5g/nujxGAbZ7UMRdm1ojunj7TZ5EnVkiQ7wQo6hHiGPEaECwE8SCma0/A==
+"@backstage/core-components@^0.3.0", "@backstage/core-components@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@backstage/core-components/-/core-components-0.3.1.tgz#79c32b560a22560618c79e19d5d470d6548714d2"
+  integrity sha512-LGRMZGXfbY9mQg2ML1WDde+e2gBaErzmcWlB7QdIoMFat5AhQgQ5ofBybuu3g7qfCNIOUSQwLw7a9ENVVtONww==
   dependencies:
     "@backstage/config" "^0.1.6"
-    "@backstage/core-plugin-api" "^0.1.5"
+    "@backstage/core-plugin-api" "^0.1.6"
     "@backstage/errors" "^0.1.1"
     "@backstage/theme" "^0.2.9"
     "@material-table/core" "^3.1.0"
@@ -1415,7 +1415,7 @@
     "@testing-library/react-hooks" "^3.4.2"
     "@types/dagre" "^0.7.44"
     "@types/prop-types" "^15.7.3"
-    "@types/react" "^16.9"
+    "@types/react" "*"
     "@types/react-sparklines" "^1.7.0"
     "@types/react-text-truncate" "^0.14.0"
     classnames "^2.2.6"
@@ -1444,15 +1444,15 @@
     remark-gfm "^1.0.0"
     zen-observable "^0.8.15"
 
-"@backstage/core-plugin-api@^0.1.4", "@backstage/core-plugin-api@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@backstage/core-plugin-api/-/core-plugin-api-0.1.5.tgz#f25a5bd4e62a44d465490c4d1c8007092d9895b7"
-  integrity sha512-3jcHAmtDp3qAKT3njvy3NqD3OhL5t1LXv2W7/U3dAw0VrscyZbAT4Rc/fMeUsKjEcj12r8xF8mEQsBfDhAnJFg==
+"@backstage/core-plugin-api@^0.1.4", "@backstage/core-plugin-api@^0.1.5", "@backstage/core-plugin-api@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@backstage/core-plugin-api/-/core-plugin-api-0.1.6.tgz#d636839ee3eb5f663908f13064dbed10a61a289c"
+  integrity sha512-CG4Csyz4MtL2F9FjgIJnqSCD6XiqDhh06r3LIoslVKyBVNl9F9IEC0ntJDiCdzKLScWQxqhS2Vv/R6V6Y8eK9A==
   dependencies:
     "@backstage/config" "^0.1.6"
     "@backstage/theme" "^0.2.9"
     "@material-ui/core" "^4.12.2"
-    "@types/react" "^16.9"
+    "@types/react" "*"
     history "^5.0.0"
     prop-types "^15.7.2"
     react "^16.12.0"
@@ -1926,17 +1926,17 @@
     react-use "^17.2.4"
 
 "@backstage/plugin-tech-radar@^0.4.3":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-tech-radar/-/plugin-tech-radar-0.4.4.tgz#c73520bca7d9297beceaf31c5ad4235f01982017"
-  integrity sha512-NeTCqGvXmP4NGbOM0JfiTS9gPl1hp8R1Jd3iWrXhvWMGCc7OF6cWNNz1y9y0lC6VR4xqCM4AD/DreRmhBUOKdA==
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-tech-radar/-/plugin-tech-radar-0.4.5.tgz#95d6ce9672c6553639bbea425fbe1ab2f64ab8eb"
+  integrity sha512-eS2g0m+5IuHWZK94+PL4iL5OctDPjGPd+KReKigCm2PUmB8FaU9MQ3YkWWS1NNo6iNYN0H9OMFKmUcj1aS6mbw==
   dependencies:
-    "@backstage/core-components" "^0.3.0"
-    "@backstage/core-plugin-api" "^0.1.5"
+    "@backstage/core-components" "^0.3.1"
+    "@backstage/core-plugin-api" "^0.1.6"
     "@backstage/theme" "^0.2.9"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
     "@material-ui/lab" "4.0.0-alpha.45"
-    color "^3.1.2"
+    color "^4.0.1"
     d3-force "^2.0.1"
     prop-types "^15.7.2"
     react "^16.13.1"
@@ -6559,12 +6559,20 @@ color@3.0.x:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-color@^3.0.0, color@^3.1.2:
+color@^3.0.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/color/-/color-3.2.1.tgz#3544dc198caf4490c3ecc9a790b54fe9ff45e164"
   integrity sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA==
   dependencies:
     color-convert "^1.9.3"
+    color-string "^1.6.0"
+
+color@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.0.1.tgz#21df44cd10245a91b1ccf5ba031609b0e10e7d67"
+  integrity sha512-rpZjOKN5O7naJxkH2Rx1sZzzBgaiWECc6BYXjeCE6kF0kcASJYbUq02u7JqIHwCb/j3NhV+QhRL2683aICeGZA==
+  dependencies:
+    color-convert "^2.0.1"
     color-string "^1.6.0"
 
 colorette@1.2.1:
