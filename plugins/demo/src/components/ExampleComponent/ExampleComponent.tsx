@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, Grid } from '@material-ui/core';
+import React from "react"
+import { Typography, Grid } from "@material-ui/core"
 import {
   InfoCard,
   Header,
@@ -8,8 +8,8 @@ import {
   ContentHeader,
   HeaderLabel,
   SupportButton,
-} from '@backstage/core-components';
-import { ExampleFetchComponent } from '../ExampleFetchComponent';
+} from "@backstage/core-components"
+import { ExampleFetchComponent } from "../ExampleFetchComponent"
 
 export const ExampleComponent = () => (
   <Page themeId="tool">
@@ -35,4 +35,4 @@ export const ExampleComponent = () => (
       </Grid>
     </Content>
   </Page>
-);
+)

@@ -1,14 +1,14 @@
-import React from 'react';
-import { makeStyles, Theme, Grid, List, Paper } from '@material-ui/core';
+import React from "react"
+import { makeStyles, Theme, Grid, List, Paper } from "@material-ui/core"
 
-import { CatalogResultListItem } from '@backstage/plugin-catalog';
+import { CatalogResultListItem } from "@backstage/plugin-catalog"
 import {
   SearchBar,
   SearchFilter,
   SearchResult,
   DefaultResultListItem,
-} from '@backstage/plugin-search';
-import { Content, Header, Page } from '@backstage/core-components';
+} from "@backstage/plugin-search"
+import { Content, Header, Page } from "@backstage/core-components"
 
 const useStyles = makeStyles((theme: Theme) => ({
   bar: {
@@ -18,14 +18,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: theme.spacing(2),
   },
   filter: {
-    '& + &': {
+    "& + &": {
       marginTop: theme.spacing(2.5),
     },
   },
-}));
+}))
 
 const SearchPage = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <Page themeId="home">
@@ -42,12 +42,12 @@ const SearchPage = () => {
               <SearchFilter.Select
                 className={classes.filter}
                 name="kind"
-                values={['Component', 'Template']}
+                values={["Component", "Template"]}
               />
               <SearchFilter.Checkbox
                 className={classes.filter}
                 name="lifecycle"
-                values={['experimental', 'production']}
+                values={["experimental", "production"]}
               />
             </Paper>
           </Grid>
@@ -57,20 +57,20 @@ const SearchPage = () => {
                 <List>
                   {results.map(({ type, document }) => {
                     switch (type) {
-                      case 'software-catalog':
+                      case "software-catalog":
                         return (
                           <CatalogResultListItem
                             key={document.location}
                             result={document}
                           />
-                        );
+                        )
                       default:
                         return (
                           <DefaultResultListItem
                             key={document.location}
                             result={document}
                           />
-                        );
+                        )
                     }
                   })}
                 </List>
@@ -80,7 +80,7 @@ const SearchPage = () => {
         </Grid>
       </Content>
     </Page>
-  );
-};
+  )
+}
 
-export const searchPage = <SearchPage />;
+export const searchPage = <SearchPage />
