@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 99
+    ignore:
+      - dependency-name: "backstage*"
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "07:00"
+    open-pull-requests-limit: 99
