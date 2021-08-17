@@ -1190,16 +1190,16 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@backstage/backend-common@^0.8.3", "@backstage/backend-common@^0.8.6", "@backstage/backend-common@^0.8.7", "@backstage/backend-common@^0.8.8":
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.8.tgz#d21734d1bd78ee586e1cd78291ac66517e30286a"
-  integrity sha512-Kv7o8oQq2rU/XAjlDUC6YR/sw3dp4mF3TmuQcW7jqgxxpf48AryDWhsKYwlUx76PQrdg5tAzFep9y85iNrtB0g==
+"@backstage/backend-common@^0.8.3", "@backstage/backend-common@^0.8.6", "@backstage/backend-common@^0.8.7", "@backstage/backend-common@^0.8.8", "@backstage/backend-common@^0.8.9":
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.9.tgz#a9466eeec426c14efcf8266bb6191bf16b6dc9fb"
+  integrity sha512-IQ/71mJeRsI1L5eMJil7NYQ/HKsPZ6POMa8HczEWzk7hZQagSxG9SHzs1bQ5DA1bfEGlBeM8dx3ZkhAhoGeO1g==
   dependencies:
     "@backstage/cli-common" "^0.1.2"
     "@backstage/config" "^0.1.6"
     "@backstage/config-loader" "^0.6.6"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.9"
+    "@backstage/integration" "^0.6.0"
     "@google-cloud/storage" "^5.8.0"
     "@octokit/rest" "^18.5.3"
     "@types/cors" "^2.8.6"
@@ -1511,7 +1511,7 @@
     react-dom "^16.13.1"
     react-use "^17.2.4"
 
-"@backstage/integration@^0.5.7", "@backstage/integration@^0.5.8", "@backstage/integration@^0.5.9":
+"@backstage/integration@^0.5.8", "@backstage/integration@^0.5.9":
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-0.5.9.tgz#9eeb2f570794b196a8e769d8628b68937863a0fc"
   integrity sha512-SfYcIHMurasJ5AlNzvq/4+8VLx5ONZ1vZqSG9zX/jvASCyrQY+Ifumaj13XBBuykTv61eHaqsLcEFtd0zgBtpQ==
@@ -1522,6 +1522,18 @@
     cross-fetch "^3.0.6"
     git-url-parse "~11.4.4"
     luxon "^1.25.0"
+
+"@backstage/integration@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-0.6.0.tgz#e99b34b00463da7d8f888e62036cf9dd89118151"
+  integrity sha512-+4GFmXoyrwqQYBU2HGjFOmD9pKb9/AItycVzPnxlE4rL0rcqJXaSThgE7+hlmyjA1tIfHlrPG/xFmT/opkQ5Wg==
+  dependencies:
+    "@backstage/config" "^0.1.6"
+    "@octokit/auth-app" "^3.4.0"
+    "@octokit/rest" "^18.5.3"
+    cross-fetch "^3.0.6"
+    git-url-parse "~11.4.4"
+    luxon "^2.0.2"
 
 "@backstage/plugin-api-docs@^0.6.4":
   version "0.6.5"
@@ -1783,34 +1795,34 @@
     yn "^4.0.0"
     yup "^0.29.3"
 
-"@backstage/plugin-scaffolder-backend-module-cookiecutter@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-backend-module-cookiecutter/-/plugin-scaffolder-backend-module-cookiecutter-0.1.0.tgz#01b738d3465ab357c2400d43af9430d1bc5faa52"
-  integrity sha512-M0+GAkgLWc6UEBouyKupVXzXho0lFJYWdTzM7aHASRFQ16fhu+4Ob2ESLnkbEu1Tquh5O8WEuhW23zRk1b4RRg==
+"@backstage/plugin-scaffolder-backend-module-cookiecutter@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-backend-module-cookiecutter/-/plugin-scaffolder-backend-module-cookiecutter-0.1.1.tgz#f7f857e7d966c3d20f18fc69530a036a158163d7"
+  integrity sha512-sCeclVgBo3WwycS8uKsP3P40IYqq4eOuHDPLVvxJrpdKQJpMalp0r3GrwZnCW6OszQziZVyXJzIU3aP1gfDSaA==
   dependencies:
-    "@backstage/backend-common" "^0.8.6"
+    "@backstage/backend-common" "^0.8.9"
     "@backstage/config" "^0.1.5"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.7"
-    "@backstage/plugin-scaffolder-backend" "^0.14.0"
+    "@backstage/integration" "^0.6.0"
+    "@backstage/plugin-scaffolder-backend" "^0.15.0"
     command-exists "^1.2.9"
     cross-fetch "^3.0.6"
     fs-extra "10.0.0"
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@backstage/plugin-scaffolder-backend@^0.14.0", "@backstage/plugin-scaffolder-backend@^0.14.1":
-  version "0.14.2"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-backend/-/plugin-scaffolder-backend-0.14.2.tgz#8d9746b4de6580e00d723ecdab5124591044157a"
-  integrity sha512-K6TL+x2sEylQf3eG+I06ZUb9ZeLyp8bHuSAcSpymVqSVuHjYJSQS5WWZn+PepsFwzGwbCYCYdW1xVX1bXbgQQQ==
+"@backstage/plugin-scaffolder-backend@^0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-scaffolder-backend/-/plugin-scaffolder-backend-0.15.0.tgz#b7ccf48ffae5cd395be2b0d76e8d787d0766802e"
+  integrity sha512-fWEYJ4CLSGMZhIvHplqcSHPb3jkntg56+H1esdxl1/hri8e4CvdGWRxyqvb2Ng/b7pVM5mYIdJJMe8ejXZrQEg==
   dependencies:
-    "@backstage/backend-common" "^0.8.8"
+    "@backstage/backend-common" "^0.8.9"
     "@backstage/catalog-client" "^0.3.17"
     "@backstage/catalog-model" "^0.9.0"
     "@backstage/config" "^0.1.6"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.9"
-    "@backstage/plugin-scaffolder-backend-module-cookiecutter" "^0.1.0"
+    "@backstage/integration" "^0.6.0"
+    "@backstage/plugin-scaffolder-backend-module-cookiecutter" "^0.1.1"
     "@gitbeaker/core" "^30.2.0"
     "@gitbeaker/node" "^30.2.0"
     "@octokit/rest" "^18.5.3"
@@ -1832,7 +1844,7 @@
     jsonschema "^1.2.6"
     knex "^0.95.1"
     lodash "^4.17.21"
-    luxon "^1.26.0"
+    luxon "^2.0.2"
     morgan "^1.10.0"
     nunjucks "^3.2.3"
     octokit-plugin-create-pull-request "^3.9.3"
@@ -12824,10 +12836,15 @@ lunr@^2.3.9:
   resolved "https://registry.yarnpkg.com/lunr/-/lunr-2.3.9.tgz#18b123142832337dd6e964df1a5a7707b25d35e1"
   integrity sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow==
 
-luxon@^1.25.0, luxon@^1.26.0, luxon@^1.27.0:
+luxon@^1.25.0, luxon@^1.27.0:
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.0.tgz#e7f96daad3938c06a62de0fb027115d251251fbf"
   integrity sha512-TfTiyvZhwBYM/7QdAVDh+7dBTBA29v4ik0Ce9zda3Mnf8on1S5KJI8P2jKFZ8+5C0jhmr0KwJEO/Wdpm0VeWJQ==
+
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
 
 lz-string@^1.4.4:
   version "1.4.4"
