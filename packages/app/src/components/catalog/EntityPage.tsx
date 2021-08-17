@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
-import { Button, Grid } from '@material-ui/core';
+import React from "react"
+import { Button, Grid } from "@material-ui/core"
 import {
   EntityApiDefinitionCard,
   EntityConsumedApisCard,
@@ -22,7 +22,7 @@ import {
   EntityHasApisCard,
   EntityProvidedApisCard,
   EntityProvidingComponentsCard,
-} from '@backstage/plugin-api-docs';
+} from "@backstage/plugin-api-docs"
 import {
   EntityAboutCard,
   EntityDependsOnComponentsCard,
@@ -41,19 +41,19 @@ import {
   isKind,
   hasCatalogProcessingErrors,
   isOrphan,
-} from '@backstage/plugin-catalog';
+} from "@backstage/plugin-catalog"
 import {
   isGithubActionsAvailable,
   EntityGithubActionsContent,
-} from '@backstage/plugin-github-actions';
+} from "@backstage/plugin-github-actions"
 import {
   EntityUserProfileCard,
   EntityGroupProfileCard,
   EntityMembersListCard,
   EntityOwnershipCard,
-} from '@backstage/plugin-org';
-import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
-import { EmptyState } from '@backstage/core-components';
+} from "@backstage/plugin-org"
+import { EntityTechdocsContent } from "@backstage/plugin-techdocs"
+import { EmptyState } from "@backstage/core-components"
 
 const cicdContent = (
   // This is an example of how you can implement your company's logic in entity page.
@@ -80,7 +80,7 @@ const cicdContent = (
       />
     </EntitySwitch.Case>
   </EntitySwitch>
-);
+)
 
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
@@ -110,7 +110,7 @@ const overviewContent = (
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
   </Grid>
-);
+)
 
 const serviceEntityPage = (
   <EntityLayout>
@@ -148,7 +148,7 @@ const serviceEntityPage = (
       <EntityTechdocsContent />
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const websiteEntityPage = (
   <EntityLayout>
@@ -175,7 +175,7 @@ const websiteEntityPage = (
       <EntityTechdocsContent />
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 /**
  * NOTE: This page is designed to work on small screens such as mobile devices.
@@ -194,21 +194,21 @@ const defaultEntityPage = (
       <EntityTechdocsContent />
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const componentPage = (
   <EntitySwitch>
-    <EntitySwitch.Case if={isComponentType('service')}>
+    <EntitySwitch.Case if={isComponentType("service")}>
       {serviceEntityPage}
     </EntitySwitch.Case>
 
-    <EntitySwitch.Case if={isComponentType('website')}>
+    <EntitySwitch.Case if={isComponentType("website")}>
       {websiteEntityPage}
     </EntitySwitch.Case>
 
     <EntitySwitch.Case>{defaultEntityPage}</EntitySwitch.Case>
   </EntitySwitch>
-);
+)
 
 const apiPage = (
   <EntityLayout>
@@ -236,7 +236,7 @@ const apiPage = (
       </Grid>
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const userPage = (
   <EntityLayout>
@@ -251,7 +251,7 @@ const userPage = (
       </Grid>
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const groupPage = (
   <EntityLayout>
@@ -269,7 +269,7 @@ const groupPage = (
       </Grid>
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const systemPage = (
   <EntityLayout>
@@ -293,7 +293,7 @@ const systemPage = (
       <EntitySystemDiagramCard />
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 const domainPage = (
   <EntityLayout>
@@ -308,17 +308,17 @@ const domainPage = (
       </Grid>
     </EntityLayout.Route>
   </EntityLayout>
-);
+)
 
 export const entityPage = (
   <EntitySwitch>
-    <EntitySwitch.Case if={isKind('component')} children={componentPage} />
-    <EntitySwitch.Case if={isKind('api')} children={apiPage} />
-    <EntitySwitch.Case if={isKind('group')} children={groupPage} />
-    <EntitySwitch.Case if={isKind('user')} children={userPage} />
-    <EntitySwitch.Case if={isKind('system')} children={systemPage} />
-    <EntitySwitch.Case if={isKind('domain')} children={domainPage} />
+    <EntitySwitch.Case if={isKind("component")} children={componentPage} />
+    <EntitySwitch.Case if={isKind("api")} children={apiPage} />
+    <EntitySwitch.Case if={isKind("group")} children={groupPage} />
+    <EntitySwitch.Case if={isKind("user")} children={userPage} />
+    <EntitySwitch.Case if={isKind("system")} children={systemPage} />
+    <EntitySwitch.Case if={isKind("domain")} children={domainPage} />
 
     <EntitySwitch.Case>{defaultEntityPage}</EntitySwitch.Case>
   </EntitySwitch>
-);
+)

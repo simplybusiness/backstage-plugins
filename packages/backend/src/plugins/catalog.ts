@@ -1,23 +1,20 @@
-import {
-  CatalogBuilder,
-  createRouter,
-} from '@backstage/plugin-catalog-backend';
-import { Router } from 'express';
-import { PluginEnvironment } from '../types';
+import { CatalogBuilder, createRouter } from "@backstage/plugin-catalog-backend"
+import { Router } from "express"
+import { PluginEnvironment } from "../types"
 
 export default async function createPlugin(
-  env: PluginEnvironment,
+  env: PluginEnvironment
 ): Promise<Router> {
-  const builder = await CatalogBuilder.create(env);
+  const builder = await CatalogBuilder.create(env)
   const {
     entitiesCatalog,
     locationsCatalog,
     locationService,
     processingEngine,
     locationAnalyzer,
-  } = await builder.build();
+  } = await builder.build()
 
-  await processingEngine.start();
+  await processingEngine.start()
 
   return await createRouter({
     entitiesCatalog,
@@ -26,5 +23,5 @@ export default async function createPlugin(
     locationAnalyzer,
     logger: env.logger,
     config: env.config,
-  });
+  })
 }

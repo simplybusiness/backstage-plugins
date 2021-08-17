@@ -42,14 +42,13 @@
     "lerna": "^4.0.0",
     "prettier": "2.3.2"
   },
-  "prettier": "@spotify/prettier-config",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write ."
     ],
     "*.{json,md}": [
-      "prettier --write"
+      "prettier --write ."
     ]
   },
   "jest": {

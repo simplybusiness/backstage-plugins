@@ -1,12 +1,12 @@
 import {
   ScmIntegrationsApi,
   scmIntegrationsApiRef,
-} from '@backstage/integration-react';
+} from "@backstage/integration-react"
 import {
   AnyApiFactory,
   configApiRef,
   createApiFactory,
-} from '@backstage/core-plugin-api';
+} from "@backstage/core-plugin-api"
 
 export const apis: AnyApiFactory[] = [
   createApiFactory({
@@ -14,4 +14,4 @@ export const apis: AnyApiFactory[] = [
     deps: { configApi: configApiRef },
     factory: ({ configApi }) => ScmIntegrationsApi.fromConfig(configApi),
   }),
-];
+]

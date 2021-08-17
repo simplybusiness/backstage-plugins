@@ -1,12 +1,12 @@
 version: v1.0
-name: 'Semaphore v2 tests'
+name: "Semaphore v2 tests"
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
 
 blocks:
-  - name: 'shared cache'
+  - name: "shared cache"
     dependencies: []
     task:
       jobs:
@@ -20,8 +20,8 @@ blocks:
             - yarn -v
             - retry --times 3 --sleep 5 yarn install --frozen-lockfile
             - retry --times 3 --sleep 5 cache store
-  - name: 'JS/TS tests'
-    dependencies: ['shared cache']
+  - name: "JS/TS tests"
+    dependencies: ["shared cache"]
     task:
       prologue:
         commands:
@@ -53,7 +53,7 @@ blocks:
         - name: Backstage version dependencies check
           commands:
             - yarn backstage-cli versions:check
-  - name: 'Docker linting'
+  - name: "Docker linting"
     dependencies: []
     task:
       secrets:

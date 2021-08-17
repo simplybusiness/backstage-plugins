@@ -1,6 +1,6 @@
-import { createRouter } from '@backstage/plugin-app-backend';
-import { Router } from 'express';
-import { PluginEnvironment } from '../types';
+import { createRouter } from "@backstage/plugin-app-backend"
+import { Router } from "express"
+import { PluginEnvironment } from "../types"
 
 export default async function createPlugin({
   logger,
@@ -9,6 +9,6 @@ export default async function createPlugin({
   return await createRouter({
     logger,
     config,
-    appPackageName: 'app',
-  });
+    appPackageName: "app",
+  })
 }

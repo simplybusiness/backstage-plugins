@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-import React, { useContext, PropsWithChildren } from 'react';
-import { Link, makeStyles } from '@material-ui/core';
-import HomeIcon from '@material-ui/icons/Home';
-import ExtensionIcon from '@material-ui/icons/Extension';
-import MapIcon from '@material-ui/icons/MyLocation';
-import LibraryBooks from '@material-ui/icons/LibraryBooks';
-import CreateComponentIcon from '@material-ui/icons/AddCircleOutline';
-import LogoFull from './LogoFull';
-import LogoIcon from './LogoIcon';
-import { NavLink } from 'react-router-dom';
-import { Settings as SidebarSettings } from '@backstage/plugin-user-settings';
-import { SidebarSearch } from '@backstage/plugin-search';
+import React, { useContext, PropsWithChildren } from "react"
+import { Link, makeStyles } from "@material-ui/core"
+import HomeIcon from "@material-ui/icons/Home"
+import ExtensionIcon from "@material-ui/icons/Extension"
+import MapIcon from "@material-ui/icons/MyLocation"
+import LibraryBooks from "@material-ui/icons/LibraryBooks"
+import CreateComponentIcon from "@material-ui/icons/AddCircleOutline"
+import LogoFull from "./LogoFull"
+import LogoIcon from "./LogoIcon"
+import { NavLink } from "react-router-dom"
+import { Settings as SidebarSettings } from "@backstage/plugin-user-settings"
+import { SidebarSearch } from "@backstage/plugin-search"
 import {
   Sidebar,
   SidebarPage,
@@ -35,26 +35,26 @@ import {
   SidebarDivider,
   SidebarSpace,
   SidebarScrollWrapper,
-} from '@backstage/core-components';
+} from "@backstage/core-components"
 
 const useSidebarLogoStyles = makeStyles({
   root: {
     width: sidebarConfig.drawerWidthClosed,
     height: 3 * sidebarConfig.logoHeight,
-    display: 'flex',
-    flexFlow: 'row nowrap',
-    alignItems: 'center',
+    display: "flex",
+    flexFlow: "row nowrap",
+    alignItems: "center",
     marginBottom: -14,
   },
   link: {
     width: sidebarConfig.drawerWidthClosed,
     marginLeft: 24,
   },
-});
+})
 
 const SidebarLogo = () => {
-  const classes = useSidebarLogoStyles();
-  const { isOpen } = useContext(SidebarContext);
+  const classes = useSidebarLogoStyles()
+  const { isOpen } = useContext(SidebarContext)
 
   return (
     <div className={classes.root}>
@@ -67,8 +67,8 @@ const SidebarLogo = () => {
         {isOpen ? <LogoFull /> : <LogoIcon />}
       </Link>
     </div>
-  );
-};
+  )
+}
 
 export const Root = ({ children }: PropsWithChildren<{}>) => (
   <SidebarPage>
@@ -92,4 +92,4 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
     </Sidebar>
     {children}
   </SidebarPage>
-);
+)
