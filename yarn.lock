@@ -1190,16 +1190,16 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@backstage/backend-common@^0.8.3", "@backstage/backend-common@^0.8.6", "@backstage/backend-common@^0.8.7", "@backstage/backend-common@^0.8.8":
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.8.tgz#d21734d1bd78ee586e1cd78291ac66517e30286a"
-  integrity sha512-Kv7o8oQq2rU/XAjlDUC6YR/sw3dp4mF3TmuQcW7jqgxxpf48AryDWhsKYwlUx76PQrdg5tAzFep9y85iNrtB0g==
+"@backstage/backend-common@^0.8.3", "@backstage/backend-common@^0.8.6", "@backstage/backend-common@^0.8.7", "@backstage/backend-common@^0.8.8", "@backstage/backend-common@^0.8.9":
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.8.9.tgz#a9466eeec426c14efcf8266bb6191bf16b6dc9fb"
+  integrity sha512-IQ/71mJeRsI1L5eMJil7NYQ/HKsPZ6POMa8HczEWzk7hZQagSxG9SHzs1bQ5DA1bfEGlBeM8dx3ZkhAhoGeO1g==
   dependencies:
     "@backstage/cli-common" "^0.1.2"
     "@backstage/config" "^0.1.6"
     "@backstage/config-loader" "^0.6.6"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.9"
+    "@backstage/integration" "^0.6.0"
     "@google-cloud/storage" "^5.8.0"
     "@octokit/rest" "^18.5.3"
     "@types/cors" "^2.8.6"
@@ -1511,7 +1511,7 @@
     react-dom "^16.13.1"
     react-use "^17.2.4"
 
-"@backstage/integration@^0.5.7", "@backstage/integration@^0.5.8", "@backstage/integration@^0.5.9":
+"@backstage/integration@^0.5.7", "@backstage/integration@^0.5.9":
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-0.5.9.tgz#9eeb2f570794b196a8e769d8628b68937863a0fc"
   integrity sha512-SfYcIHMurasJ5AlNzvq/4+8VLx5ONZ1vZqSG9zX/jvASCyrQY+Ifumaj13XBBuykTv61eHaqsLcEFtd0zgBtpQ==
@@ -1522,6 +1522,18 @@
     cross-fetch "^3.0.6"
     git-url-parse "~11.4.4"
     luxon "^1.25.0"
+
+"@backstage/integration@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-0.6.0.tgz#e99b34b00463da7d8f888e62036cf9dd89118151"
+  integrity sha512-+4GFmXoyrwqQYBU2HGjFOmD9pKb9/AItycVzPnxlE4rL0rcqJXaSThgE7+hlmyjA1tIfHlrPG/xFmT/opkQ5Wg==
+  dependencies:
+    "@backstage/config" "^0.1.6"
+    "@octokit/auth-app" "^3.4.0"
+    "@octokit/rest" "^18.5.3"
+    cross-fetch "^3.0.6"
+    git-url-parse "~11.4.4"
+    luxon "^2.0.2"
 
 "@backstage/plugin-api-docs@^0.6.4":
   version "0.6.5"
@@ -1609,16 +1621,16 @@
     yn "^4.0.0"
 
 "@backstage/plugin-catalog-backend@^0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-0.13.1.tgz#5ee3d3d2d6d254519411685b8187b1c9e74ba0ba"
-  integrity sha512-iJd6AuUV6g3GkuuK3+POoJDbf0dWIeRDItNm9xhb4ERz0vWTNoeswIN1NyBFkNkHJsUptmjofHKprCRJF2GeCg==
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-0.13.2.tgz#7e880b2dd05d88734dc5ea62d58f788fddcbe87f"
+  integrity sha512-6PEyuS/WK/IoNMgie5e7uWszGepVmd45/oauRllyQnGD7O+R0keJls5BtEMqt5TIEFgKc8NhdSlg9T2kFn8+Vg==
   dependencies:
-    "@backstage/backend-common" "^0.8.6"
+    "@backstage/backend-common" "^0.8.9"
     "@backstage/catalog-client" "^0.3.18"
     "@backstage/catalog-model" "^0.9.0"
     "@backstage/config" "^0.1.5"
     "@backstage/errors" "^0.1.1"
-    "@backstage/integration" "^0.5.8"
+    "@backstage/integration" "^0.6.0"
     "@backstage/plugin-search-backend-node" "^0.4.0"
     "@backstage/search-common" "^0.1.2"
     "@octokit/graphql" "^4.5.8"
@@ -12828,6 +12840,11 @@ luxon@^1.25.0, luxon@^1.26.0, luxon@^1.27.0:
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.0.tgz#e7f96daad3938c06a62de0fb027115d251251fbf"
   integrity sha512-TfTiyvZhwBYM/7QdAVDh+7dBTBA29v4ik0Ce9zda3Mnf8on1S5KJI8P2jKFZ8+5C0jhmr0KwJEO/Wdpm0VeWJQ==
+
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
 
 lz-string@^1.4.4:
   version "1.4.4"
