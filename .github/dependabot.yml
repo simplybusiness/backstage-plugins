@@ -8,7 +8,7 @@ updates:
       interval: "daily"
     open-pull-requests-limit: 99
     ignore:
-      - dependency-name: "backstage*"
+      - dependency-name: "@backstage*"
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
