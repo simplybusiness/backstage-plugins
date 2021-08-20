@@ -2195,6 +2195,18 @@
     query-string "^7.0.0"
     xcase "^2.0.1"
 
+"@gitbeaker/core@^32.1.2":
+  version "32.1.2"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/core/-/core-32.1.2.tgz#b27e506557d28a53ec9a35c8532f48b77b7577ba"
+  integrity sha512-xeTqY6x8wvrY+aC+300xgJmvRdsOu5ZiAqMvrhY3wEyTedOxLolsFV2VbWlpyq2IVTiwDAbImpz1wi8xhr7PUw==
+  dependencies:
+    "@gitbeaker/requester-utils" "^32.1.2"
+    form-data "^4.0.0"
+    li "^1.3.0"
+    mime-types "^2.1.32"
+    query-string "^7.0.0"
+    xcase "^2.0.1"
+
 "@gitbeaker/node@^30.2.0":
   version "30.5.0"
   resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-30.5.0.tgz#e00c4d1e4e7a29039daa70b9ba8d15050c106469"
@@ -2206,10 +2218,30 @@
     got "^11.8.2"
     xcase "^2.0.1"
 
+"@gitbeaker/node@^32.1.2":
+  version "32.1.2"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-32.1.2.tgz#201bd1d568508416740c5e53992571979c65b9bd"
+  integrity sha512-dVeJG3AE30WaRLPi6y0fSg2d9SNMuOlxukdnZBGBQuKh2S4anqj+0HXmrA4SEu+u0QniDkHKjCEoG9Re1+8NMA==
+  dependencies:
+    "@gitbeaker/core" "^32.1.2"
+    "@gitbeaker/requester-utils" "^32.1.2"
+    delay "^5.0.0"
+    got "^11.8.2"
+    xcase "^2.0.1"
+
 "@gitbeaker/requester-utils@^30.5.0":
   version "30.5.0"
   resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-30.5.0.tgz#4b0039a4340edbc06fe0b7751b871a91d617728d"
   integrity sha512-MtDne1QRGHTprgDsFjySXgOmu9zUPUS2L8qS74kJm9Wnz4RY/+d/n5HRl6i34shidkQJWRqAOiAwn8zDFqhovA==
+  dependencies:
+    form-data "^4.0.0"
+    query-string "^7.0.0"
+    xcase "^2.0.1"
+
+"@gitbeaker/requester-utils@^32.1.2":
+  version "32.1.2"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-32.1.2.tgz#cdb2b7c8fd6b705b7ba265397b3ab05d2b378a97"
+  integrity sha512-uhZ2gKbpXcAyf1vT3U4v5wO+Fh0BJYJVfEBmNglilcoGAQFnkC6cVkxV3TZrXePud+lTshMdAEJlSO7cv8ETlg==
   dependencies:
     form-data "^4.0.0"
     query-string "^7.0.0"
@@ -13354,7 +13386,7 @@ mime-db@1.49.0, "mime-db@>= 1.43.0 < 2":
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.49.0.tgz#f3dfde60c99e9cf3bc9701d687778f537001cbed"
   integrity sha512-CIc8j9URtOVApSFCQIF+VBkX1RwXp/oMMOrqdyXSBXq5RWNEsRfyj1kiRnQgmNXmHxPoFIxOroKA3zcU9P+nAA==
 
-mime-types@^2.0.8, mime-types@^2.1.12, mime-types@^2.1.27, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
+mime-types@^2.0.8, mime-types@^2.1.12, mime-types@^2.1.27, mime-types@^2.1.32, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.32"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.32.tgz#1d00e89e7de7fe02008db61001d9e02852670fd5"
   integrity sha512-hJGaVS4G4c9TSMYh2n6SQAGrC4RnfU+daP8G7cSCmaqNjiOoUY0VHCMS42pxnQmVF1GWwFhbHWn3RIxCqTmZ9A==
