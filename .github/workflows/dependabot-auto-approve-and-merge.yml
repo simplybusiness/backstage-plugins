@@ -1,0 +1,24 @@
+name: "Dependabot auto approve and merge"
+on:
+  pull_request_target:
+    types: [labeled]
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]' &&
+      ( github.event.label.name == 'major' || github.event.label.name == 'minor' || github.event.label.name == 'patch' )
+    steps:
+      - name: automerge
+        uses: actions/github-script@v4
+        with:
+          github-token: "${{ secrets.X_BOT_ORG_REPO_ONLY_TOKEN }}"
+          result-encoding: string
+          script: |
+            github.pulls.createReview({
+              owner: context.payload.repository.owner.login,
+              repo: context.payload.repository.name,
+              pull_number: context.payload.pull_request.number,
+              event: 'APPROVE',
+              body: '@dependabot merge'
+            })
