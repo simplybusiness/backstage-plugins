@@ -31,7 +31,7 @@
     "@backstage/plugin-search-backend": "^0.2.3",
     "@backstage/plugin-search-backend-node": "^0.4.0",
     "@backstage/plugin-techdocs-backend": "^0.9.0",
-    "@gitbeaker/node": "^32.1.2",
+    "@gitbeaker/node": "^33.0.0",
     "@octokit/rest": "^18.5.3",
     "dockerode": "^3.2.1",
     "express": "^4.17.1",
