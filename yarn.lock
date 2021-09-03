@@ -2209,12 +2209,12 @@
     query-string "^7.0.0"
     xcase "^2.0.1"
 
-"@gitbeaker/core@^32.2.0":
-  version "32.2.0"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/core/-/core-32.2.0.tgz#e22b75db8a8758e31b4e58df8951640fcb2bbc48"
-  integrity sha512-AIwyglHv3qNqzBpjUJ05gLzWI/oO+EDqSkR1RQdq1znmHgLRlY9+IWUET6ezhvLQ3uDZ749RbKJAqjw3K8tn+w==
+"@gitbeaker/core@^33.0.1":
+  version "33.0.1"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/core/-/core-33.0.1.tgz#bb1da78d452de8702e60495bdb2ad6bd15c2e648"
+  integrity sha512-5HJpGQrB/W5+plWkZ8MbWxc9oqr6NY0NWrYb1usUCW+3kyNTJI43gJCBetgflumAugd/bJuVcPoGsef6nLsJTQ==
   dependencies:
-    "@gitbeaker/requester-utils" "^32.2.0"
+    "@gitbeaker/requester-utils" "^33.0.1"
     form-data "^4.0.0"
     li "^1.3.0"
     mime-types "^2.1.32"
@@ -2232,13 +2232,13 @@
     got "^11.8.2"
     xcase "^2.0.1"
 
-"@gitbeaker/node@^32.1.2":
-  version "32.2.0"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-32.2.0.tgz#0579dc7e7647d9e3f6535bc608df6ee058a1253c"
-  integrity sha512-LSHNQivzzr22DocvTXxSvexwnRzsaFIIC1QlLPdi73PAoNVxdvM3Qa85hEObytjskF1YE0V4KZi/yQ/dRVcWww==
+"@gitbeaker/node@^33.0.1":
+  version "33.0.1"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-33.0.1.tgz#290f7a6b404a3499a6ab6c5fbbb3e3e5f1ae7a8b"
+  integrity sha512-ZxI7IuGO8eV1nNAT2TgdP76tnTBG9f/7QBqdrcF+jhKdrP6+Hu8F9RlK5lAG2RpgYpggYjgaSu8/8Ivh5qWtrA==
   dependencies:
-    "@gitbeaker/core" "^32.2.0"
-    "@gitbeaker/requester-utils" "^32.2.0"
+    "@gitbeaker/core" "^33.0.1"
+    "@gitbeaker/requester-utils" "^33.0.1"
     delay "^5.0.0"
     got "^11.8.2"
     xcase "^2.0.1"
@@ -2252,10 +2252,10 @@
     query-string "^7.0.0"
     xcase "^2.0.1"
 
-"@gitbeaker/requester-utils@^32.2.0":
-  version "32.2.0"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-32.2.0.tgz#9ffd1eba5b989a823030158b430fdb38a5bf1707"
-  integrity sha512-DhIG095QQ22xrXO+Mg3mJlRpW7PnOSW5f1REKtiveMOJIi4OOJiIBkdhoSYdmJMHq4iV/zHI3xFh5GNLpaHydA==
+"@gitbeaker/requester-utils@^33.0.1":
+  version "33.0.1"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-33.0.1.tgz#81ac47ac2b813aa4dbc03a6451aeaab71771e742"
+  integrity sha512-oCcDzDkCKynXy/AavoW1JfWdYZVY+YyzeVgOg/kBs20oS6uiAsr+lnrtTRfruyeUE2rxHj7aCNxpvrYVSBfpnA==
   dependencies:
     form-data "^4.0.0"
     query-string "^7.0.0"
