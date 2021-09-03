@@ -82,8 +82,28 @@ const cicdContent = (
   </EntitySwitch>
 )
 
+const entityWarningContent = (
+  <>
+    <EntitySwitch>
+      <EntitySwitch.Case if={isOrphan}>
+        <Grid item xs={12}>
+          <EntityOrphanWarning />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
+    <EntitySwitch>
+      <EntitySwitch.Case if={hasCatalogProcessingErrors}>
+        <Grid item xs={12}>
+          <EntityProcessingErrorsPanel />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
+  </>
+)
+
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
+    {entityWarningContent}
     <EntitySwitch>
       <EntitySwitch.Case if={isOrphan}>
         <Grid item xs={12}>
