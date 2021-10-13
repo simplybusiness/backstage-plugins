@@ -2209,12 +2209,12 @@
     query-string "^7.0.0"
     xcase "^2.0.1"
 
-"@gitbeaker/core@^33.0.1":
-  version "33.0.1"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/core/-/core-33.0.1.tgz#bb1da78d452de8702e60495bdb2ad6bd15c2e648"
-  integrity sha512-5HJpGQrB/W5+plWkZ8MbWxc9oqr6NY0NWrYb1usUCW+3kyNTJI43gJCBetgflumAugd/bJuVcPoGsef6nLsJTQ==
+"@gitbeaker/core@^34.2.0":
+  version "34.2.0"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/core/-/core-34.2.0.tgz#04cc821e3d6329eab641611a5d62c922d7a3b01e"
+  integrity sha512-NcGFU0HmtvSZsiEOkO3iikDoV5T8Xs2+9c2QaqwWl6M4iaWYh9/lsgPfN/HdASZDF4P1gztVEXW4X+F22kkNYw==
   dependencies:
-    "@gitbeaker/requester-utils" "^33.0.1"
+    "@gitbeaker/requester-utils" "^34.2.0"
     form-data "^4.0.0"
     li "^1.3.0"
     mime-types "^2.1.32"
@@ -2232,13 +2232,13 @@
     got "^11.8.2"
     xcase "^2.0.1"
 
-"@gitbeaker/node@^33.0.1":
-  version "33.0.1"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-33.0.1.tgz#290f7a6b404a3499a6ab6c5fbbb3e3e5f1ae7a8b"
-  integrity sha512-ZxI7IuGO8eV1nNAT2TgdP76tnTBG9f/7QBqdrcF+jhKdrP6+Hu8F9RlK5lAG2RpgYpggYjgaSu8/8Ivh5qWtrA==
+"@gitbeaker/node@^34.2.0":
+  version "34.2.0"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/node/-/node-34.2.0.tgz#86db63c9c8f3628099e8ad8410a37a0ceb9a2fe6"
+  integrity sha512-LuVrzjnNQsERR//sDLDJSAjHHMXaI4VKAzdCk01kbCBoFQ5BJ+gmsEPo64zknkermjPl848FXcOE8siFE55KPg==
   dependencies:
-    "@gitbeaker/core" "^33.0.1"
-    "@gitbeaker/requester-utils" "^33.0.1"
+    "@gitbeaker/core" "^34.2.0"
+    "@gitbeaker/requester-utils" "^34.2.0"
     delay "^5.0.0"
     got "^11.8.2"
     xcase "^2.0.1"
@@ -2252,13 +2252,13 @@
     query-string "^7.0.0"
     xcase "^2.0.1"
 
-"@gitbeaker/requester-utils@^33.0.1":
-  version "33.0.1"
-  resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-33.0.1.tgz#81ac47ac2b813aa4dbc03a6451aeaab71771e742"
-  integrity sha512-oCcDzDkCKynXy/AavoW1JfWdYZVY+YyzeVgOg/kBs20oS6uiAsr+lnrtTRfruyeUE2rxHj7aCNxpvrYVSBfpnA==
+"@gitbeaker/requester-utils@^34.2.0":
+  version "34.2.0"
+  resolved "https://registry.yarnpkg.com/@gitbeaker/requester-utils/-/requester-utils-34.2.0.tgz#6844f767de33ec2fd1e7aeb05f415569a76f314b"
+  integrity sha512-PgZuv41cTFRsza7zP6mqD4vS58Aii06Gz2JB+X1SMbvTkvYLVfYnst4KCwswrTqB439XOqHnwlw0nJa36n4ssw==
   dependencies:
     form-data "^4.0.0"
-    query-string "^7.0.0"
+    qs "^6.10.1"
     xcase "^2.0.1"
 
 "@google-cloud/common@^3.7.0":
