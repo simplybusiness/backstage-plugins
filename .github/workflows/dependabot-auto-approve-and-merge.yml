@@ -10,7 +10,7 @@ jobs:
       ( github.event.label.name == 'major' || github.event.label.name == 'minor' || github.event.label.name == 'patch' )
     steps:
       - name: automerge
-        uses: actions/github-script@v4
+        uses: actions/github-script@v5
         with:
           github-token: "${{ secrets.X_BOT_ORG_REPO_ONLY_TOKEN }}"
           result-encoding: string
